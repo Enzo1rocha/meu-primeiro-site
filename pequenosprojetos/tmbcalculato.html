@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/home.css">
+    <title>Calculadora de Taxa Metábolica Basal</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="../home.html">Enzo Rocha</a></div>
+        <nav class="navigation">
+            <ul>
+                <li> <a href="../home.html">Home</a> </li>
+                <li> <a href="#">Sobre</a> </li>
+                <li> <a href="../projetos.html">Projetos</a> </li>
+                <li> <a href="#">Contato</a> </li>
+                <li> <a href="../login.html" target="_self">Login</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gradiente-header"></div>
+
+
+    <section id="section-calculadoratmb">
+
+        <div id="titulo-preencha"><h1>CALCULADORA</h1></div>
+
+        <section id="calculadora">
+
+            <div id="peso-input" class="inputs-tmb">
+                <label for="Peso">Peso: (kg) </label>
+                <input class="inputs-style"  type="number" name="Peso" id="Peso">
+            </div>
+
+            <div id="altura-input" class="inputs-tmb">
+                <label for="Altura">Altura: (cm) </label>
+                <input class="inputs-style" type="number" name="altura" id="altura">
+            </div>
+
+            <div id="idade-input" class="inputs-tmb">
+                <label for="Idade">Idade:</label>
+                <input class="inputs-style"  type="number" name="Idade" id="Idade">
+            </div>
+
+            <div id="genero-input" class="inputs-tmb">
+                <label for="radsex">Qual seu genero?</label>
+                <input type="radio" name="radsextmb" id="homem" class="radios-gen" checked>
+                <label for="homem"> Masculino</label>
+                <input type="radio" name="radsextmb" id="mulher" class="radios-gen">
+                <label for="mulher">Feminino:</label>
+            </div>
+
+            <div id="titulo_atividade_fisica">
+                <h2>Fator Atividade Fisica</h2>
+            </div>
+
+            <div id="campo_atividade_fisica">
+                
+                <div class="opções_atfisica" id="opções_01">
+                    <label for="apenas_tmb">Apenas a Taxa Metábolica</label>
+                    <div class="container_inputs_tmb"><input type="radio" name="radatfisica" id="apenas_tmb" class="radio_atfisica" checked></div>
+                </div>
+
+                <div class="opções_atfisica">
+                    <label for="sedentario">Sedentário</label>
+                    <div class="container_inputs_tmb"><input type="radio" name="radatfisica" id="sed_atfisica" class="radio_atfisica"></div>
+                </div>
+
+                <div class="opções_atfisica">
+                    <label for="atfisica01">Levemente Ativo</label>
+                    <div class="container_inputs_tmb"><input type="radio" name="radatfisica" id="atfisica01" class="radio_atfisica"></div>
+                </div>
+
+                <div class="opções_atfisica">
+                    <label for="atfisica02">Moderadamente Ativo</label>
+                    <div class="container_inputs_tmb"><input type="radio" name="radatfisica" id="atfisica02" class="radio_atfisica"></div>
+                </div>
+
+                <div class="opções_atfisica">
+                    <label for="atfisica03">Muito Ativo</label>
+                    <div class="container_inputs_tmb"><input type="radio" name="radatfisica" id="atfisica03" class="radio_atfisica"></div>
+                </div>
+
+                <div class="opções_atfisica">
+                    <label for="atfisica04">Extremamente Ativo</label>
+                    <div class="container_inputs_tmb" id="container_inputs_tmb_ultima"><input type="radio" name="radatfisica" id="atfisica04" class="radio_atfisica"></div>
+                </div>
+            
+
+            </div>
+
+            <div id="verificador">
+                <input type="button" value="Calcular" id="calcula-button" onclick="calcular_tmb()">
+            </div>
+
+            
+
+            <div id="res">
+                <p id="mensagem_script-tmb">Preencha os dados para calcular</p>
+
+                <h1 id="resposta_script-tmb"></h1>
+            </div>
+
+        </section>
+        
+    </section>
+
+    <div class="gradiente-footer"></div>
+    
+    <footer>
+        <div class="logo-footer">
+            <a href="../home.html">Enzo Rocha</a>
+        </div>
+
+        <div class="footer-navs">
+            <nav class="footer-navigation">
+                <h2>Navegação</h2>
+                <ul>
+                    <li> <a href="../home.html">Home</a> </li>
+                    <li> <a href="#">Sobre</a> </li>
+                    <li> <a href="../projetos.html">Projetos</a> </li>
+                    <li> <a href="#">Contato</a> </li>
+                    <li> <a href="../login.html" target="_self">Login</a> </li>
+                </ul>
+            </nav>
+            <nav class="footer-hard-navigation">
+                <h2>Hard-Skills</h2>
+                <ul>
+                    <li> <a href="#">Lógica de Programação</a> </li>
+                    <li> <a href="#">Trabalho em Equipe</a> </li>
+                    <li> <a href="#">JavaScript</a> </li>
+                    <li> <a href="#">Python</a> </li>
+                    <li> <a href="#">HTML</a> </li>
+                    <li> <a href="#">CSS</a> </li>
+                </ul>
+            </nav>
+
+            <nav class="footer-serviços-navigation">
+                <h2>Serviços</h2>
+                <ul>
+                    <li> <a href="#">Automação de Tarefas</a> </li>
+                    <li> <a href="#">Landing Pages</a> </li>
+                    <li> <a href="#">Back-End</a> </li>
+                    <li> <a href="#">Sites</a> </li>
+                </ul>
+            </nav>
+            <nav class="footer-contato-navigation">
+                <h2>Contato</h2>
+                <ul>
+                    <li> <a href="#">Linkedin</a> </li>
+                    <li> <a href="#">GitHub</a> </li>
+                    <li> <a href="#">Instagram</a> </li>
+                    <li> <a href="#">Youtube</a> </li>
+                    <li> <a href="#">X</a> </li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
