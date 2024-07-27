@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/home.css">
-    <title>Conta</title>
+    <link rel="stylesheet" href="../estilo/login.css">
+    <title>Faça Login</title>
 </head>
 
-<body onload="account()">
-
+<body>
     <header>
-        <div class="logo"><a href="home.html">Enzo Rocha</a></div>
+        <div class="logo"><a href="../home.html">Enzo Rocha</a></div>
         <nav class="navigation">
             <ul>
-                <li> <a href="home.html">Home</a> </li>
+                <li> <a href="../home.html">Home</a> </li>
                 <li> <a href="#">Sobre</a> </li>
-                <li> <a href="#">Preços</a> </li>
+                <li> <a href="projetos.html">Projetos</a> </li>
                 <li> <a href="#">Contato</a> </li>
                 <li> <a href="login.html" target="_self">Login</a> </li>
             </ul>
@@ -25,30 +24,40 @@
 
     <div class="gradiente-header"></div>
 
-    <section id="account-content">
+    <main>
+        <div id="formulario">
+            <div id="texto">
+                <h1>LOGIN</h1>
+            </div>
+            <div id="login">
+                <form action="login" method="post">
+                    <div class="inputs">
+                        <input type="text" name="nome" id="nome" required placeholder="Nome:">
+                    </div>
+                    <div class="inputs">
+                        <input type="password" name="senha" id="senha" required placeholder="Senha: ">
+                    </div>
 
-        <div id="bem-vindo">
-            <h1 id="boas-vindas"></h1>
+                    <div id="esq-div"><a id="esq-senha" href="#">Esqueceu a Senha?</a></div>
+
+                    <input type="button" name="verificar-login" id="verificar-login" value="Login" onclick="clicou_login()">
+                </form>
+            </div>
         </div>
-
-        <div id="account-img-perfil">
-            <img src="" alt="">
-        </div>
-
-    </section>
+    </main>
 
     <div class="gradiente-footer"></div>
 
     <footer>
         <div class="logo-footer">
-            <a href="home.html">Enzo Rocha</a>
+            <a href="../home.html">Enzo Rocha</a>
         </div>
 
         <div class="footer-navs">
             <nav class="footer-navigation">
                 <h2>Navegação</h2>
                 <ul>
-                    <li> <a href="home.html">Home</a> </li>
+                    <li> <a href="../home.html">Home</a> </li>
                     <li> <a href="#">Sobre</a> </li>
                     <li> <a href="projetos.html">Projetos</a> </li>
                     <li> <a href="#">Contato</a> </li>
@@ -90,7 +99,8 @@
 
     </footer>
 
-    <script src="script.js"></script>
+
+    <script src="../script.js"></script>
 
 </body>
 

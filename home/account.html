@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/login.css">
-    <title>Faça Login</title>
+    <link rel="stylesheet" href="../estilo/home.css">
+    <title>Conta</title>
 </head>
 
-<body>
+<body onload="account()">
+
     <header>
-        <div class="logo"><a href="home.html">Enzo Rocha</a></div>
+        <div class="logo"><a href="../home.html">Enzo Rocha</a></div>
         <nav class="navigation">
             <ul>
-                <li> <a href="home.html">Home</a> </li>
+                <li> <a href="../home.html">Home</a> </li>
                 <li> <a href="#">Sobre</a> </li>
                 <li> <a href="projetos.html">Projetos</a> </li>
                 <li> <a href="#">Contato</a> </li>
@@ -24,27 +25,17 @@
 
     <div class="gradiente-header"></div>
 
-    <main>
-        <div id="formulario">
-            <div id="texto">
-                <h1>LOGIN</h1>
-            </div>
-            <div id="login">
-                <form action="login" method="post">
-                    <div class="inputs">
-                        <input type="text" name="nome" id="nome" required placeholder="Nome:">
-                    </div>
-                    <div class="inputs">
-                        <input type="password" name="senha" id="senha" required placeholder="Senha: ">
-                    </div>
+    <section id="account-content">
 
-                    <div id="esq-div"><a id="esq-senha" href="#">Esqueceu a Senha?</a></div>
-
-                    <input type="button" name="verificar-login" id="verificar-login" value="Login" onclick="clicou_login()">
-                </form>
-            </div>
+        <div id="bem-vindo">
+            <h1 id="boas-vindas"></h1>
         </div>
-    </main>
+
+        <div id="account-img-perfil">
+            <img src="" alt="">
+        </div>
+
+    </section>
 
     <div class="gradiente-footer"></div>
 
@@ -57,7 +48,7 @@
             <nav class="footer-navigation">
                 <h2>Navegação</h2>
                 <ul>
-                    <li> <a href="home.html">Home</a> </li>
+                    <li> <a href="../home.html">Home</a> </li>
                     <li> <a href="#">Sobre</a> </li>
                     <li> <a href="projetos.html">Projetos</a> </li>
                     <li> <a href="#">Contato</a> </li>
@@ -98,7 +89,6 @@
         </div>
 
     </footer>
-
 
     <script src="script.js"></script>
 
