@@ -97,7 +97,7 @@ header {
 }
 
 .banner {
-    height: 100vh;
+    height: 120vh;
     background: url(..//imagens/fundo-medio-1440.jpg);
     background-size: cover;
     background-position: center;
@@ -116,7 +116,7 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 120vh;
+        height: 100vh;
     }
 }
 
@@ -126,7 +126,13 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 125vh;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        height: 55vh;
     }
 }
 
@@ -136,7 +142,7 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 80vh;
     }
 }
 
@@ -929,7 +935,7 @@ footer {
         font-size: 1.7em;
     }
     .navigation ul li a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 7px 9px;
     }
 }
@@ -939,7 +945,7 @@ footer {
         font-size: 1.5em;
     }
     .navigation ul li a {
-        font-size: 12px;
+        font-size: 15px;
         padding: 7px 8px;
     }
 }
